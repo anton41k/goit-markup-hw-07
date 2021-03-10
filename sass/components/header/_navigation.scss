@@ -1,0 +1,16 @@
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  position: relative;
+
+  $:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.nav__link {
+  color: var(--black-text);
+}
