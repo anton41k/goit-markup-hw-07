@@ -1,0 +1,21 @@
+.footer__social-networks {
+  margin-right: 93px;
+}
+
+.social-networks__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+
+  padding-bottom: 20px;
+}
+
+.social-networks__link--footer {
+  background-color: var(--color-gray01-bgicon);
+  color: var(--color-white);
+
+  @include transition(background-color);
+}

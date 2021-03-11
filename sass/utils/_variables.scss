@@ -29,67 +29,11 @@
   --portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --send-shadow: rgba(0, 0, 0, 0.15);
-  --transition-duration: 250ms;
+  --transition-duration: 2s;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --gradient-bgc-hero:linear-gradient(
+  --gradient-bgc-hero: linear-gradient(
     to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
   );
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  letter-spacing: 0.03em;
-  color: var(--black-text);
-  background-color: var(--white-text);
-  margin: 0;
-}
-
-img {
-  display: block; /*убрать отступ картинки внизу */
-  max-width: 100%;
-  height: auto;
-}
-
-ul,
-p,
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.icon {
-  fill: currentColor;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.bt-cursor {
-  cursor: pointer;
 }
