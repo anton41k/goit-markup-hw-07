@@ -1,26 +1,26 @@
 :root {
-  --white-text: rgba(255, 255, 255, 1);
-  --blue-text: rgba(33, 150, 243, 1);
-  --blue-bgc-hover-send: rgba(24, 140, 232, 1);
-  --black-logo: rgba(0, 0, 0, 1);
-  --black-text: rgba(33, 33, 33, 1);
-  --gray-text: rgba(117, 117, 117, 1);
-  --gray-text05: rgba(117, 117, 117, 0.5);
-  --gray-op06-text: rgba(255, 255, 255, 0.6);
-  --gray-op01-bgicon: rgba(255, 255, 255, 0.1);
-  --gray-op03-bgcinput: rgba(255, 255, 255, 0.3);
-  --border-black01: rgba(0, 0, 0, 0.1);
-  --border-input: rgba(33, 33, 33, 0.2);
-  --bgr-blue-card: rgba(33, 150, 243, 0.9);
-  --bgr-employment: rgba(47, 48, 58, 0.8);
-  --bgr-hero-footer: rgba(47, 48, 58, 1);
-  --bgr-wgray: rgba(245, 244, 250, 1);
-  --bgr-backdrop: rgba(0, 0, 0, 0.2);
-  --gray-border: rgba(238, 238, 238, 1);
-  --gray-header-line: rgba(236, 236, 236, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-blue: rgba(33, 150, 243, 1);
+  --color-blue-send: rgba(24, 140, 232, 1);
+  --color-blue09: rgba(33, 150, 243, 0.9);
+  --color-gray: rgba(117, 117, 117, 1);
+  --color-gray05: rgba(117, 117, 117, 0.5);
+  --color-gray06: rgba(255, 255, 255, 0.6);
+  --color-gray01-bgicon: rgba(255, 255, 255, 0.1);
+  --color-gray03-bgcinput: rgba(255, 255, 255, 0.3);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-black: rgba(33, 33, 33, 1);
+  --color-black01: rgba(0, 0, 0, 0.1);
+  --color-black02: rgba(33, 33, 33, 0.2);
+  --color-gray08: rgba(47, 48, 58, 0.8);
+  --color-gray-bgr: rgba(47, 48, 58, 1);
+  --color-white-bgr: rgba(245, 244, 250, 1);
+  --color-black02-bgr: rgba(0, 0, 0, 0.2);
+  --color-gray-border: rgba(238, 238, 238, 1);
+  --color-gray-header-line: rgba(236, 236, 236, 1);
   --set-gap: 30px;
-  --bgr-hero: rgba(47, 48, 58, 0.4);
-  --bord-customers: rgba(175, 177, 184, 1);
+  --color-black04: rgba(47, 48, 58, 0.4);
+  --color-gray-customers: rgba(175, 177, 184, 1);
   --pad-container: 94px;
   --filtr-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -31,6 +31,11 @@
   --send-shadow: rgba(0, 0, 0, 0.15);
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --gradient-bgc-hero:linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
 }
 
 body {
@@ -48,9 +53,27 @@ img {
   height: auto;
 }
 
-ul {
+ul,
+p,
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.icon {
+  fill: currentColor;
 }
 
 .visually-hidden {

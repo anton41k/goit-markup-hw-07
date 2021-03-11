@@ -13,54 +13,12 @@ section:last-child {
 /*Header*/
 
 /*NAV*/
-.nav-list {
-  display: flex;
-  align-items: center;
-}
 
-.nav__item:not(:last-child) {
-  margin-right: 50px;
-}
 
-/*В главной навигации сделано подчёркивание ссылки*/
-.nav__item {
-  position: relative;
 
-  $:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-.nav__link {
-  color: var(--black-text);
-}
-
-.nav__link--current {
-  color: var(--blue-text);
-
-  $::after {
-    opacity: 1;
-  }
-}
-
-.nav__list .header-nav-static:not(.nav__link--current):hover:after,
-.nav__list .header-nav-static:not(.nav__link--current):focus::after {
-  opacity: 1;
-}
 
 /**/
-.header-hover {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
 
-  padding: 32px 0;
-  display: block;
-
-  transition: color var(--transition-duration) var(--transition-timing-function);
-}
 
 /*icon mail, tel*/
 .icon {
@@ -70,10 +28,7 @@ section:last-child {
 }
 
 /*hover link contact and icon*/
-.header-hover:hover,
-.header-hover:focus {
-  color: var(--blue-text);
-}
+
 
 .header-cont,
 .header-cont .item,
@@ -87,43 +42,16 @@ section:last-child {
   margin-left: auto;
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
-}
+
 
 .header-cont .item:first-child {
   margin-right: 50px;
 }
 
-.nav__list .header-nav-static::after {
-  content: '';
-  display: block;
 
-  width: 100%;
-  height: 4px;
-  opacity: 0;
-
-  background: var(--blue-text);
-
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  border-radius: 2px;
-
-  transition: opacity var(--transition-duration)
-    var(--transition-timing-function);
-}
 
 /*линия внизу header*/
-.header {
-  background-color: var(--white-text);
-  border-bottom: 1px solid var(--gray-header-line);
 
-  position: sticky;
-  top: -1px;
-  z-index: 9999;
-}
 
 /*Main*/
 /*hero*/
@@ -152,7 +80,7 @@ section:last-child {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-text);
+  color: var(--color-white);
   margin-bottom: 30px;
 }
 
@@ -162,7 +90,7 @@ section:last-child {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--white-text);
+  color: var(--color-white);
   background-color: var(--blue-text);
 
   padding: 10px 32px;
@@ -258,7 +186,7 @@ section:last-child {
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
-  color: var(--white-text);
+  color: var(--color-white);
   width: 100%;
 
   background-color: var(--bgr-employment);
@@ -315,7 +243,7 @@ section:last-child {
 }
 
 .main-team-ul > .item {
-  background-color: var(--white-text);
+  background-color: var(--color-white);
 
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--team-shadow);
@@ -338,7 +266,7 @@ section:last-child {
   height: 44px;
   border-radius: 50%;
 
-  background-color: var(--white-text);
+  background-color: var(--color-white);
   color: var(--gray-text);
 
   display: flex;
@@ -362,7 +290,7 @@ section:last-child {
 .social-networks .link:hover,
 .social-networks .link:focus {
   background-color: var(--blue-text);
-  color: var(--white-text);
+  color: var(--color-white);
 }
 
 /*customers*/
@@ -430,7 +358,7 @@ section:last-child {
 }
 
 .footer-address-geo {
-  color: var(--white-text);
+  color: var(--color-white);
 }
 
 .footer-address-mailtel {
@@ -466,7 +394,7 @@ section:last-child {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--white-text);
+  color: var(--color-white);
   text-transform: uppercase;
 }
 
@@ -477,7 +405,7 @@ section:last-child {
 
 .footer-network .link {
   background-color: var(--gray-op01-bgicon);
-  color: var(--white-text);
+  color: var(--color-white);
 }
 
 /*Рассылка*/
@@ -485,7 +413,7 @@ section:last-child {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--white-text);
+  color: var(--color-white);
   text-transform: uppercase;
 
   margin-bottom: 20px;
@@ -524,7 +452,7 @@ section:last-child {
   cursor: pointer;
 
   background-color: var(--blue-text);
-  color: var(--white-text);
+  color: var(--color-white);
 
   box-shadow: 0px 4px 4px var(--send-shadow);
 
@@ -545,7 +473,7 @@ section:last-child {
 /*Портфолио*/
 
 .main {
-  background-color: var(--white-text);
+  background-color: var(--color-white);
 }
 
 /*portfolio button*/
@@ -576,7 +504,7 @@ section:last-child {
 .main-portfolio-list .bt:hover,
 .main-portfolio-list .bt:focus {
   background-color: var(--blue-text);
-  color: var(--white-text);
+  color: var(--color-white);
   box-shadow: var(--filtr-shadow);
 }
 
@@ -664,7 +592,7 @@ section:last-child {
   font-size: 18px;
   line-height: 1.56;
 
-  color: var(--white-text);
+  color: var(--color-white);
   background-color: var(--bgr-blue-card);
 
   padding: 63px 24px;
@@ -715,7 +643,7 @@ section:last-child {
   min-width: 447px;
   padding: 40px;
 
-  background-color: var(--white-text);
+  background-color: var(--color-white);
   box-shadow: var(--team-shadow);
   border-radius: 4px;
 
@@ -727,7 +655,7 @@ section:last-child {
 .modal-close-bt {
   border-radius: 50%;
   border: 1px solid var(--border-black01);
-  background-color: var(--white-text);
+  background-color: var(--color-white);
   outline: none;
 
   padding: 8px 8px;
@@ -790,7 +718,7 @@ section:last-child {
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--black-text);
-  background-color: var(--white-text);
+  background-color: var(--color-white);
 
   width: calc(100% - 84px);
   height: 16px;
@@ -914,7 +842,7 @@ section:last-child {
 .form-checkbox:checked + .field-check .icon-check.send {
   top: 0;
   background-color: var(--blue-text);
-  color: var(--white-text);
+  color: var(--color-white);
 }
 /**/
 
@@ -926,7 +854,7 @@ section:last-child {
   cursor: pointer;
 
   background-color: var(--blue-text);
-  color: var(--white-text);
+  color: var(--color-white);
 
   box-shadow: 0px 4px 4px var(--send-shadow);
 
