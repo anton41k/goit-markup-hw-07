@@ -1,7 +1,7 @@
 :root {
   --color-white: rgba(255, 255, 255, 1);
   --color-blue: rgba(33, 150, 243, 1);
-  --color-blue-send: rgba(24, 140, 232, 1);
+  --color-blue-submit: rgba(24, 140, 232, 1);
   --color-blue09: rgba(33, 150, 243, 0.9);
   --color-gray: rgba(117, 117, 117, 1);
   --color-gray05: rgba(117, 117, 117, 0.5);
@@ -29,7 +29,7 @@
   --portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --send-shadow: rgba(0, 0, 0, 0.15);
-  --transition-duration: 2s;
+  --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --gradient-bgc-hero: linear-gradient(
     to right,
