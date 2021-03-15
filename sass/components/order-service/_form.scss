@@ -1,41 +1,41 @@
-.form-order-service {
+.form-service {
   display: flex;
   flex-direction: column;
 }
 
-.form-order-service__field:not(:first-child) {
+.form-service__field:not(:first-child) {
   margin-top: 10px;
 }
 
-.form-order-service__label {
+.form-service__label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--color-gray);
 
-  &:hover + .form-order-service__input-wrapper .form-order-service__input{
+  &:hover + .form-service__input-wrapper .form-service__input{
     border: 1px solid var(--color-blue);
   }
 
-  &:hover + .form-order-service__input-wrapper .form-order-service--icon-input {
+  &:hover + .form-service__input-wrapper .icon--form-service {
     fill: var(--color-blue);
   }
 }
 
-.form-order-service__input-wrapper {
+.form-service__input-wrapper {
   position: relative;
   margin-top: 4px;
 
-  &:hover .form-order-service--icon-input {
+  &:hover .icon--form-service {
     fill: var(--color-blue);
   }
 
-  &:hover .form-order-service__input {
+  &:hover .form-service__input {
     border: 1px solid var(--color-blue);
   }
 }
 
-.form-order-service__input {
+.form-service__input {
   font-family: inherit;
   font-style: normal;
   letter-spacing: 0.03em;
@@ -54,7 +54,7 @@
   
   @include transition(border);
 
-  &:focus + .form-order-service--icon-input{
+  &:focus + .icon--form-service{
     fill: var(--color-blue);
   }
 
@@ -63,7 +63,7 @@
   }
 }
 
-.form-order-service--icon-input {
+.icon--form-service {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -72,7 +72,7 @@
   @include transition(fill);
 }
 
-.form-order-service__input--coment {
+.form-service__input--coment {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -88,11 +88,8 @@
   }
 }
 
-
-
-
 /*CheckBox*/
-.form-field-agreements {
+.contract__field {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -104,50 +101,13 @@
   display: flex;
 }
 
-.form-label-agreements {
+.contract__label {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.form-link-agreements {
-  color: var(--color-blue);
-  text-decoration-line: underline;
-}
-
-/*.form .icon-check {
-  margin-right: 8px;
-
-  fill: currentColor;
-}
-
-
-
-.form-checkbox:checked + .icon-check {
-  background-image: url(../images/check-send.svg);
-  color: var(--blue-text);
-}*/
-
-/*TEST*/
-.form-order-service__field-agreements {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--color-gray);
-
-  margin-top: 20px;
-  padding: 0 12px;
-
-  display: flex;
-}
-
-.form-order-service__label-agreements {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.field-svg-agreements {
+.contract__svg {
   position: relative;
   overflow: hidden;
 
@@ -159,14 +119,14 @@
   border-radius: 3px;
 }
 
-.field-svg-agreements__icon-check {
+.contract__icon-check {
   position: absolute;
   left: 0;
   top: 0;
   fill: currentColor;
 }
 
-.field-svg-agreements__icon-check--send {
+.contract__icon-check--send {
   position: absolute;
   left: 0;
   top: 15px;
@@ -174,20 +134,20 @@
   border: 1px solid var(--color-blue);
 }
 
-.form-order-service__checkbox-agreements:checked + .field-svg-agreements .field-svg-agreements__icon-check--send {
+.contract__checkbox:checked + .contract__svg .contract__icon-check--send {
   top: 0;
   background-color: var(--color-blue);
   color: var(--color-white);
 }
 
-.form-order-service__link-agreements {
+.contract__link {
   color: var(--color-blue);
   text-decoration-line: underline;
 
   margin-left: 10px;
 }
 
-.form-order-service__submit {
+.form-service__submit {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
