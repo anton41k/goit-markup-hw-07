@@ -1,32 +1,33 @@
-.container--section-specialization{
+.container--specialization{
     padding-bottom: var(--pad-container);
 }
 
-.section-specialization__title{
+.specialization__title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    margin-bottom: 50px;
 }
 
-.section-specialization__list{
+.specialization__list{
     display: flex;
     flex-wrap: wrap;
 
-    margin-top: 50px;
-    margin-right: calc(-1 * var(--set-gap));
+    margin-left: calc(-1 * var(--set-gap));
 }
 
-.section-specialization__item{
+.specialization__item{
     flex-basis: calc(100% / 3 - #{var(--set-gap)});
-    margin-right: var(--set-gap);
+    margin-left: var(--set-gap);
 }
 
-.section-specialization__thumb{
+.specialization__thumb{
     position: relative;
 }
   
-.section-specialization__name{
+.specialization__name{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

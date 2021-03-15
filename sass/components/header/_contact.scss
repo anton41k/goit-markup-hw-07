@@ -1,4 +1,4 @@
-.contact-list {
+.contact__list {
   display: flex;
   align-items: center;
 
@@ -7,11 +7,11 @@
   margin-left: auto;
 }
 
-.contact-list__item:first-child {
+.contact__item:first-child {
   margin-right: 50px;
 }
 
-.contact-list__link {
+.contact__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -33,6 +33,6 @@
   }
 }
 
-.contact-list__icon {
+.contact__icon {
   margin-right: 10px;
 }

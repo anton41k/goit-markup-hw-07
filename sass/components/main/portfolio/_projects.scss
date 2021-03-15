@@ -1,18 +1,14 @@
-.container-projects {
-  padding-top: 34px;
-}
-
 .projects__list {
   display: flex;
   flex-wrap: wrap;
 
-  margin-right: calc(-1 * #{var(--set-gap)});
+  margin-left: calc(-1 * #{var(--set-gap)});
   margin-top: calc(-1 * #{var(--set-gap)});
 }
 
 .projects__item {
   flex-basis: calc(100% / 3 - #{var(--set-gap)} - 3px);
-  margin-right: var(--set-gap);
+  margin-left: var(--set-gap);
   margin-top: var(--set-gap);
   
   border-left: 1px solid var(--color-gray-border);
@@ -34,7 +30,7 @@
   }
 }
 
-.projects__field-name-type{
+.projects__box{
   padding: 20px 24px;
 }
 

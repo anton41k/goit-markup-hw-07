@@ -1,9 +1,9 @@
-.container--section-customers {
+.container--customers {
   padding-top: var(--pad-container);
   padding-bottom: var(--pad-container);
 }
 
-.section-customers__title {
+.customers__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -12,7 +12,7 @@
   margin-bottom: 70px;
 }
 
-.section-customers__list {
+.customers__list {
   display: flex;
   flex-wrap: wrap;
 
@@ -20,13 +20,13 @@
   margin-top: calc(-1 * #{var(--set-gap)});
 }
 
-.section-customers__item {
+.customers__item {
   flex-basis: calc(100% / 6 - #{var(--set-gap)});
   margin-left: var(--set-gap);
   margin-top: var(--set-gap);
 }
 
-.section-customers__link {
+.customers__link {
   min-height: 88px;
   border-radius: 4px;
 
