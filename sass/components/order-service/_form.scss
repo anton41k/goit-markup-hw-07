@@ -43,8 +43,8 @@
   color: var(--color-black);
   background-color: var(--color-white);
 
-  width: calc(100% - 84px);
-  height: 16px;
+  min-width: 100%;
+  min-height: 40px;
 
   padding: 11px 42px;
 
@@ -78,8 +78,7 @@
   letter-spacing: 0.01em;
 
   resize: none;
-  width: calc(100% - 32px);
-  min-height: 96px;
+  min-height: 120px;
 
   padding: 12px 16px;
   
@@ -96,7 +95,7 @@
   color: var(--color-gray);
 
   margin-top: 20px;
-  padding: 0 12px;
+  padding-left: 14px;
 
   display: flex;
 }
@@ -108,36 +107,33 @@
 }
 
 .contract__svg {
-  position: relative;
-  overflow: hidden;
-
-  width: 16px;
-  height: 15px;
-
   margin-right: 8px;
 
   border-radius: 3px;
+
+  @include transition(background-color);
 }
 
-.contract__icon-check {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: currentColor;
+.icon--contract {
+  @include transition(opacity);
 }
 
-.contract__icon-check--send {
-  position: absolute;
-  left: 0;
-  top: 15px;
-
-  border: 1px solid var(--color-blue);
+.icon--contract-send {
+  opacity: 0;
+  @include transition(opacity);
 }
 
-.contract__checkbox:checked + .contract__svg .contract__icon-check--send {
-  top: 0;
-  background-color: var(--color-blue);
+.contract__checkbox:checked + .contract__svg .icon--contract {
+  opacity: 0;
+}
+
+.contract__checkbox:checked + .contract__svg .icon--contract-send {
+  opacity: 1;
   color: var(--color-white);
+}
+
+.contract__checkbox:checked + .contract__svg {
+  background-color: var(--color-blue);
 }
 
 .contract__link {

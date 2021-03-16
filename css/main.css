@@ -1092,7 +1092,7 @@ footer {
 .form-subscription__input {
   font-size: 16px;
   line-height: 1.25;
-  width: 326px;
+  min-width: 358px;
   padding: 14px 16px;
   margin-right: 10px;
   background: transparent;
@@ -1169,7 +1169,7 @@ footer {
   position: absolute;
   left: 50%;
   top: 50%;
-  min-width: 447px;
+  max-width: 528px;
   padding: 40px;
   background-color: var(--color-white);
   -webkit-box-shadow: var(--team-shadow);
@@ -1188,7 +1188,7 @@ footer {
   border: 1px solid var(--color-black01);
   background-color: var(--color-white);
   outline: none;
-  padding: 8px 8px;
+  padding: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1265,8 +1265,8 @@ footer {
   letter-spacing: 0.03em;
   color: var(--color-black);
   background-color: var(--color-white);
-  width: calc(100% - 84px);
-  height: 16px;
+  min-width: 100%;
+  min-height: 40px;
   padding: 11px 42px;
   border: 1px solid var(--color-black02);
   border-radius: 4px;
@@ -1298,8 +1298,7 @@ footer {
   line-height: 1.16;
   letter-spacing: 0.01em;
   resize: none;
-  width: calc(100% - 32px);
-  min-height: 96px;
+  min-height: 120px;
   padding: 12px 16px;
 }
 
@@ -1326,7 +1325,7 @@ footer {
   letter-spacing: 0.03em;
   color: var(--color-gray);
   margin-top: 20px;
-  padding: 0 12px;
+  padding-left: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1343,32 +1342,34 @@ footer {
 }
 
 .contract__svg {
-  position: relative;
-  overflow: hidden;
-  width: 16px;
-  height: 15px;
   margin-right: 8px;
   border-radius: 3px;
+  -webkit-transition:  background-color var(--transition-duration) var(--transition-timing-function) ;
+  transition:  background-color var(--transition-duration) var(--transition-timing-function) ;
 }
 
-.contract__icon-check {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: currentColor;
+.icon--contract {
+  -webkit-transition:  opacity var(--transition-duration) var(--transition-timing-function) ;
+  transition:  opacity var(--transition-duration) var(--transition-timing-function) ;
 }
 
-.contract__icon-check--send {
-  position: absolute;
-  left: 0;
-  top: 15px;
-  border: 1px solid var(--color-blue);
+.icon--contract-send {
+  opacity: 0;
+  -webkit-transition:  opacity var(--transition-duration) var(--transition-timing-function) ;
+  transition:  opacity var(--transition-duration) var(--transition-timing-function) ;
 }
 
-.contract__checkbox:checked + .contract__svg .contract__icon-check--send {
-  top: 0;
-  background-color: var(--color-blue);
+.contract__checkbox:checked + .contract__svg .icon--contract {
+  opacity: 0;
+}
+
+.contract__checkbox:checked + .contract__svg .icon--contract-send {
+  opacity: 1;
   color: var(--color-white);
+}
+
+.contract__checkbox:checked + .contract__svg {
+  background-color: var(--color-blue);
 }
 
 .contract__link {
